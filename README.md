@@ -162,5 +162,3 @@ Die CSV-Datei wird transformiert und gespeichert. Die Alterswerte in der transfo
 - Integriere eine komplexere Transformation (z. B. Berechnungen, Filterung).
 
 ---
-
-Diese Übung führt die Studierenden durch den gesamten Prozess, von der Erstellung eines Jobs bis zur Verarbeitung von Daten in einem Kubernetes-Cluster. Es ist eine praktische Möglichkeit, den Umgang mit Jobs, Persistent Volumes und Datenverarbeitung zu lernen! 😊
