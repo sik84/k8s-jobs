@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: csv-transform-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: csv-transformer
+          image: sik284/csv-transformer:latest
+          volumeMounts:
+            - name: csv-volume
+              mountPath: /mnt/data
+      volumes:
+        - name: csv-volume
+          persistentVolumeClaim:
+            claimName: csv-pvc
+      restartPolicy: Never
+  backoffLimit: 4
+
